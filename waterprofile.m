@@ -12,10 +12,12 @@ x=0:0.1:4;
 xc=2;
 r=abs(x-xc);
 
+fprintf('The value of w must be within the range <strong>0<=w<=2.21</strong>\n')
+
 % Looping for input
 ready=false;
 while ~ready
-    w=input('Enter a value of <strong>w</strong> within the range <strong>0<=w<=2.21</strong>\n w = ');
+    w=input('w = ');
     ready=(w>=0 && w<=2.21);
     if ready == false
         disp('<strong>ERROR: INVALID INPUT</strong>')
